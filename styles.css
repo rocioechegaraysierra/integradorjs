@@ -1,0 +1,33 @@
+.navbar.navbar-expand-lg li a {
+  color: black;
+}
+
+.jumbotron {
+  background-position: center;
+  background-image: url("./images/home.jpg");
+  text-align: center;
+  width: auto;
+  height: 250px;
+  color: black;
+  font-family:'Georgia';
+}
+
+.titulo-articulo-index {
+  text-align: center;
+  font-family: 'Georgia';
+  font-size:large;
+  color: #764B36;
+}
+
+.card-body {
+  text-align: center;
+  font-family: 'Georgia';
+  font-size: medium;
+}
+
+.titulo-articulo-index{
+  margin: 2%;
+}
+
+
+

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg" style="background-color: #F9A72B;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -166,29 +167,30 @@
                 <div class="col align-self-center ">
                     <h2 class="display-6 fs-6 ">VENTA <span class="fs-1" style="display: block;">VALOR DE VIAJE</span>
                     </h2>
-                    <p>El costo mínimo de viaje planeado es $50.000</p>
+                    <p>Descuento en tu próximo viaje indicando el costo.</p>
                 </div>
             </div>
 
             <form>
                 <div class="row" style="padding: 1%;">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                        <input type="text" class="form-control" id= "Nombre" placeholder="Nombre">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido">
+                        <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
                     </div>
                 </div>
                 <div class="form-group" style="padding: 1%;">
-                    <input type="text" class="form-control" placeholder="Correo">
-                </div>
-                <div class="form-group" style="padding: 1%;">
-                    <input type="text" class="form-control" placeholder="Cantidad de viajeros">
+                    <input type="text" class="form-control" id= "Correo" placeholder="Correo">
                 </div>
 
-                <div class="form-group col-md-5" style="padding: 1%;">
+                <div class="form-group" style="padding: 1%;">
+                    <input type="text" class="form-control" id= "Costo" placeholder="Costo total del viaje">
+                </div>
+
+                <div class="form-group col-16" style="padding: 1%;">
                     <label>Categoria</label>
-                    <select class="form-control">
+                    <select class="form-control" id="Categoria">
                         <option selected>Elegir...</option>
                         <option>Jubilados</option>
                         <option>Menores</option>
@@ -198,16 +200,14 @@
             </form>
         </div>
         <div class="row text-center">
-            <div class="col align-self-center ">
+            <div class="col align-self-center">
                 <button type="reset" class="btn btn-secondary btn-lg">Borrar</button>
-                <button type="submit" class="btn btn-secondary btn-lg ">Resumen</button>
+                <button id="Resumen" type="submit" class="btn btn-secondary btn-lg" >Resumen</button>
+                <script src="./script.js"></script>
             </div>
         </div>
 
-
-
-
-
+        <div class="alert alert-warning text-center " role="alert" id="Mensaje" style="padding: 1%;"></div>
 
         <div class="row text-center">
             <div class="col align-self-center ">
